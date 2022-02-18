@@ -1,6 +1,7 @@
 import MyButton from './components/MyButton';
+import Container from './components/Container';
 
-import './styles/App.css';
+import './styles/App.scss';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <p>
           Hello world
         </p>
-        <MyButton content="hello world"/>
+        <Container component={<MyButton content="hello world"/>} />
       </header>
     </div>
   );

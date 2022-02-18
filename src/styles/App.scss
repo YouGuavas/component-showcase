@@ -1,5 +1,11 @@
+@import '../utils/variables';
+
 .App {
   text-align: center;
+  background-color: $my-base;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
 }
 
 .App-logo {

@@ -2,5 +2,13 @@
 
 .my-button {
   background-color: $my-green;
+  font-size: 2rem;
+  font-weight: 600;
   color: white;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  box-shadow: 0px;
+  &:hover {
+    color: black;
+  }
 }
