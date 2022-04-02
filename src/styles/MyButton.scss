@@ -1,6 +1,7 @@
 @import '../utils/_variables.scss';
 
 .my-button {
+  margin: auto;
   background-color: $my-base;
   font-size: 1.3rem;
   font-weight: 600;
@@ -18,6 +19,34 @@
     outline: 2px solid $my-aqua;
   }
   @media only screen and (max-width:$sm-max) {
-    width: 94vw;
+    width: 94%;
+  }
+}
+
+.my-button-bordered {
+  margin: auto;
+  background-color: $my-base;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: $my-peach;
+  padding: 1rem;
+  border-width: 2px;
+  border-color: $my-base;
+  border-style: outset;
+  border-radius: 0.2rem;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    background-color: $my-aqua;
+    color: $my-orange;
+  }
+  &:focus {
+    outline: 2px solid $my-aqua;
+  }
+  &:active {
+    border-style: inset;
+  }
+  @media only screen and (max-width:$sm-max) {
+    width: 94%;
   }
 }

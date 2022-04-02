@@ -4,15 +4,16 @@
   text-align: center;
   background-color: $my-base;
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(3, auto);
+  display: grid;
   justify-content: space-evenly;
   justify-items: center;
   align-content: space-evenly;
   align-items: center;
-  @media only screen and (max-width:$sm-max) {
-    grid-template-columns: auto;
-  }
+  padding: 0 1rem;
+}
+
+h1, h2, h3 {
+  color: $my-orange;
 }
 
 
