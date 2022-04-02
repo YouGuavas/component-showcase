@@ -6,12 +6,8 @@ import './styles/App.scss';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Hello world
-        </p>
-        <Container component={<MyButton content="hello world"/>} />
-      </header>
+        <Container component={<MyButton content="Hello"/>} />
+        <Container component={<MyButton content="Yo" />} />
     </div>
   );
 }

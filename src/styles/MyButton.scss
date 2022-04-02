@@ -1,14 +1,23 @@
-@import '../utils/variables.scss';
+@import '../utils/_variables.scss';
 
 .my-button {
-  background-color: $my-green;
-  font-size: 2rem;
+  background-color: $my-base;
+  font-size: 1.3rem;
   font-weight: 600;
-  color: white;
+  color: $my-peach;
   padding: 1rem;
+  border: none;
   border-radius: 0.2rem;
-  box-shadow: 0px;
+  transition: 0.3s;
   &:hover {
-    color: black;
+    cursor: pointer;
+    background-color: $my-aqua;
+    color: $my-orange;
+  }
+  &:focus {
+    outline: 2px solid $my-aqua;
+  }
+  @media only screen and (max-width:$sm-max) {
+    width: 94vw;
   }
 }
