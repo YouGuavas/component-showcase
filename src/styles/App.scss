@@ -1,5 +1,9 @@
 @import '../utils/variables';
 
+
+*:focus {
+  outline: 2px solid $my-aqua;
+}
 .App {
   text-align: center;
   background-color: $my-base;

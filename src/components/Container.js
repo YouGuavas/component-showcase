@@ -2,7 +2,7 @@ import '../styles/Container.scss';
 
 export default function Container(props) {
   return(
-    <div className="container">
+    <div className={props.classes}>
       {props.component}
     </div>
   )
