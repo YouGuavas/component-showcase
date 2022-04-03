@@ -23,6 +23,10 @@
         color: inherit;
         text-decoration: none;
         padding: 0.2rem;
+        &.active {
+          color: $my-pink;
+          background-color: $my-aqua;
+        }
 
         &:hover {
           background-color: $my-aqua;
@@ -59,8 +63,13 @@
       a {
         color: inherit;
         text-decoration: none;
+        height: 100%;
+        width: 100%;
         padding: 0.5rem;
-
+        &.active {
+          color: $my-pink;
+          background-color: $my-base;
+        }
         &:hover {
           background-color: $my-base;
         }

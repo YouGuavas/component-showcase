@@ -1,14 +1,21 @@
+import {useState} from 'react';
 import '../styles/MyNav.scss';
 
 
 export default function MyNav(props) {
+
   const links = props.links;
+
+  const [active, setActive] = useState('Home');
 
   const toggleMenu = () => {
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileBtn = document.getElementById('mobile-menu-button');
     mobileMenu.classList.toggle('hidden');
     mobileBtn.classList.toggle('hidden');
+  }
+  const toggleActive = (e) => {
+    setActive(e.target.innerHTML);
   }
   return (
     <nav className={props.classes}>
@@ -17,7 +24,7 @@ export default function MyNav(props) {
       {links.map((item, index) => {
           {/*replace #navs with item */}
           return (
-            <li key={index}><a href="#navs">{item}</a></li>
+            <li key={index}><a className={(active === item) ? 'active' : ''} onClick={toggleActive} href="#navs">{item}</a></li>
           )
         })}
       </ul>
@@ -30,7 +37,7 @@ export default function MyNav(props) {
         {links.map((item, index) => {
           {/*replace #navs with item */}
           return (
-            <li key={index} onClick={toggleMenu}><a href="#navs">{item}</a></li>
+            <li key={index} onClick={toggleMenu}><a onClick={toggleActive} className={(active === item ? 'active' : '')} href="#navs">{item}</a></li>
           )
         })}
       </ul>
