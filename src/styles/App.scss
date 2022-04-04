@@ -1,6 +1,8 @@
 @import '../utils/variables';
 
-
+html {
+  scroll-behavior: smooth;
+}
 *:focus {
   outline: 2px solid $my-peach;
 }

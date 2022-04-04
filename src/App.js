@@ -9,8 +9,10 @@ function App() {
   return (
     <div className="App">
       <h1>Component Showcase</h1>
+      <a href="#Buttons">Buttons</a>
+      <a href="#Navs">Navs</a>
       <section className="section">
-        <h2>
+        <h2 id="Buttons">
           Buttons
         </h2>
         <Container classes={"container"} component={<MyButton content="Button 1" classes="my-button"/>} />
@@ -18,7 +20,7 @@ function App() {
 
       </section>
       <section className="section">
-        <h2>Navs</h2>
+        <h2 id="Navs">Navs</h2>
         <Container classes={"container full"} component={<MyNav links={links} classes="my-nav"/>}/>
       </section>
     </div>
