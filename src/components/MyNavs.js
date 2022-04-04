@@ -25,7 +25,7 @@ export function MyNavTop(props) {
         {/*Standard menu, hides below laptop size*/}
         <ul className="standard-menu">
         {links.map((item, index) => {
-            {/*replace #navs with item */}
+            //replace #navs with item
             return (
               <li key={index}><a className={(active === item) ? 'active' : ''} onClick={toggleActive} href="#Navs">{item}</a></li>
             )
@@ -41,7 +41,7 @@ export function MyNavTop(props) {
           {/*Mobile menu, hides above tablet size*/}
           <ul id="mobile-menu" className="mobile-menu">
             {links.map((item, index) => {
-              {/*replace #navs with item */}
+              //replace #navs with item 
               return (
                 <li key={index} onClick={toggleMenu}><a onClick={toggleActive} className={(active === item ? 'active' : '')} href="#Navs">{item}</a></li>
               )
@@ -81,7 +81,7 @@ export function MyNavFull(props) {
         {/*Standard menu, hides below laptop size*/}
         <ul className="standard-menu">
         {links.map((item, index) => {
-            {/*replace #navs with item */}
+            //replace #navs with item
             return (
               <li onClick={toggleMenu} key={index}><a className={(active === item) ? 'active' : ''} onClick={toggleActive} href="#Navs">{item}</a></li>
             )
