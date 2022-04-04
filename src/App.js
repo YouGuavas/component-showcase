@@ -1,6 +1,7 @@
 import MyButton from './components/MyButton';
 import Container from './components/Container';
-import MyNav from './components/MyNav';
+import {MyNavTop} from './components/MyNavs';
+import Nav from './components/Nav';
 
 import './styles/App.scss';
 
@@ -8,9 +9,8 @@ function App() {
   const links = ['Home', 'About', 'Contact'];
   return (
     <div className="App">
+      <Nav links={['Buttons', 'Navs']} classes="my-nav"/>
       <h1>Component Showcase</h1>
-      <a href="#Buttons">Buttons</a>
-      <a href="#Navs">Navs</a>
       <section className="section">
         <h2 id="Buttons">
           Buttons
@@ -21,7 +21,7 @@ function App() {
       </section>
       <section className="section">
         <h2 id="Navs">Navs</h2>
-        <Container classes={"container full"} component={<MyNav links={links} classes="my-nav"/>}/>
+        <Container classes={"container full"} component={<MyNavTop links={links} classes="my-nav"/>}/>
       </section>
     </div>
   );

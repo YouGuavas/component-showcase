@@ -14,32 +14,57 @@
   display: flex;
   justify-content: flex-end;
   -webkit-justify-content: flex-end;
+  &.main-nav {
+    position: fixed; 
+    transform: translateX(-15%); 
+    background-color: $my-peach;
+    width: 100%;
+    .mobile-grid {
+      .mobile-menu-button {
+        background-color: $my-peach;
+        margin-right: 20px;
+        .bar1, .bar2, .bar3 {
+          background-color: $my-aqua;
+        }
+      }
+      .mobile-menu {
+        background-color: $my-peach;
+        left: 200%;
+        li>a {
+          color: $my-aqua;
+          &:hover, &.active {
+            background-color: $my-orange;
+            color: $my-aqua;
+          }
+        }
+      }
+    }
+  }
+
+
 
   ul.standard-menu { 
+
     @media only screen and (max-width:$md-max) {
       display: none;
     }
+
     display: flex;
     list-style: none;
     justify-content: right;
     height: 100%;
-    li {
-      a {
+
+    li>a {
         color: inherit;
         text-decoration: none;
         padding: 1rem;
         transition: 0.4s;
-        &.active {
-          color: $my-orange;
-          background-color: $my-aqua;
-        }
-
-        &:hover {
+        &:hover, &.active {
           color: $my-orange;
           background-color: $my-aqua;
         }
       }
-    }
+
   }
 
   .mobile-grid {
@@ -56,9 +81,11 @@
       z-index: 1000;
       height: 2rem;
       width: 2rem;
+      
       @media only screen and (min-width: $md-max) {
         display: none;
       }
+
       &:hover {
         cursor: pointer;
       }
@@ -69,6 +96,7 @@
         margin: 0.2rem 0;
         transition: 0.4s;
       }
+
       &.change {
         margin: 0;
         .bar1 {
@@ -86,10 +114,12 @@
     
     }
 
-    ul.mobile-menu { 
+    ul.mobile-menu {
+
     @media only screen and (min-width: $md-max) {
         display: none;
       }
+
       margin: 0;
       grid-column: 3;
       grid-row: 1;
@@ -97,36 +127,34 @@
       justify-content: right;
       z-index: 1;
       background-color: $my-base;
-      visibility: hidden;
-      //transition: 0.3s;
+      position: fixed;
+      left: 100%;
       height: 0;
       width: 0;
+
       &.change {
-        visibility: visible;
         height: auto;
         width: auto;
+        position: initial;
+        left: 0%;
       }
-      li {
-        a {
+
+      li>a {
           display: block;
           color: inherit;
           text-align: left;
-
           text-decoration: none;
           height: 100%;
           padding: 0.5rem;
           line-height: 1.25rem;
           transition: 0.4s;
-          &.active {
-            color: $my-peach;
-            background-color: $my-aqua;
-          }
-          &:hover {
+
+          &:hover, &.active {
             color: $my-peach;
             background-color: $my-aqua;
           }
         }
-      }
+      
     }
   }
   

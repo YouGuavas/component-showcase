@@ -1,8 +1,8 @@
 import {useState} from 'react';
-import '../styles/MyNav.scss';
+import '../styles/MyNavs.scss';
 
 
-export default function MyNav(props) {
+export function MyNavTop(props) {
 
   const links = props.links;
 
@@ -26,7 +26,7 @@ export default function MyNav(props) {
         {links.map((item, index) => {
             {/*replace #navs with item */}
             return (
-              <li key={index}><a className={(active === item) ? 'active' : ''} onClick={toggleActive} href="#navs">{item}</a></li>
+              <li key={index}><a className={(active === item) ? 'active' : ''} onClick={toggleActive} href="#Navs">{item}</a></li>
             )
           })}
         </ul>
@@ -42,7 +42,7 @@ export default function MyNav(props) {
             {links.map((item, index) => {
               {/*replace #navs with item */}
               return (
-                <li key={index} onClick={toggleMenu}><a onClick={toggleActive} className={(active === item ? 'active' : '')} href="#navs">{item}</a></li>
+                <li key={index} onClick={toggleMenu}><a onClick={toggleActive} className={(active === item ? 'active' : '')} href="#Navs">{item}</a></li>
               )
             })}
           </ul>
