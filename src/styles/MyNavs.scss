@@ -1,10 +1,5 @@
 @import '../utils/_variables.scss';
 
-.full-page {
-  background-color: $my-pink;
-  width: 100%;
-}
-
 .my-nav {
   width: 100%;
   height: 3rem;
@@ -81,7 +76,7 @@
       z-index: 1000;
       height: 2rem;
       width: 2rem;
-      
+
       @media only screen and (min-width: $md-max) {
         display: none;
       }
@@ -160,6 +155,13 @@
   
 }
 
+
 .hidden {
   display: none;
+}
+
+.full-page {
+  background-color: $my-pink;
+  width: 100%;
+  height: 100%;
 }

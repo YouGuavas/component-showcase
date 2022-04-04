@@ -1,6 +1,6 @@
 import MyButton from './components/MyButton';
 import Container from './components/Container';
-import {MyNavTop} from './components/MyNavs';
+import {MyNavTop, MyNavFull} from './components/MyNavs';
 import Nav from './components/Nav';
 
 import './styles/App.scss';
@@ -15,6 +15,7 @@ function App() {
         <h2 id="Buttons">
           Buttons
         </h2>
+
         <Container classes={"container"} component={<MyButton content="Button 1" classes="my-button"/>} />
         <Container classes={"container"} component={<MyButton content="Button 2" classes="my-button-bordered"/>} />
 
@@ -22,6 +23,7 @@ function App() {
       <section className="section">
         <h2 id="Navs">Navs</h2>
         <Container classes={"container full"} component={<MyNavTop links={links} classes="my-nav"/>}/>
+        <Container classes={"container full"} component={<MyNavFull links={links} classes="my-nav-full"/>}/>
       </section>
     </div>
   );
