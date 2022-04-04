@@ -31,21 +31,21 @@ export default function MyNav(props) {
           })}
         </ul>
         <div className="mobile-grid">
-        <button onClick={toggleMenu} id="mobile-menu-button" className="mobile-menu-button">
-          <div className="bar1"></div>
-          <div className="bar2"></div>
-          <div className="bar3"></div>
-        </button>
+          <button onClick={toggleMenu} id="mobile-menu-button" className="mobile-menu-button">
+            <div className="bar1"></div>
+            <div className="bar2"></div>
+            <div className="bar3"></div>
+          </button>
 
-        {/*Mobile menu, hides above tablet size*/}
-        <ul id="mobile-menu" className="mobile-menu">
-          {links.map((item, index) => {
-            {/*replace #navs with item */}
-            return (
-              <li key={index} onClick={toggleMenu}><a onClick={toggleActive} className={(active === item ? 'active' : '')} href="#navs">{item}</a></li>
-            )
-          })}
-        </ul>
+          {/*Mobile menu, hides above tablet size*/}
+          <ul id="mobile-menu" className="mobile-menu">
+            {links.map((item, index) => {
+              {/*replace #navs with item */}
+              return (
+                <li key={index} onClick={toggleMenu}><a onClick={toggleActive} className={(active === item ? 'active' : '')} href="#navs">{item}</a></li>
+              )
+            })}
+          </ul>
         </div>
       </nav>
     </div>
