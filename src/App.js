@@ -28,7 +28,7 @@ function App() {
       </section>
       <section className="section">
         <h2 id="Forms">Forms</h2>
-        <Container classes={"container"} component={<MyForm classes="my-form" />} />
+        <Container classes={"container full full-height"} component={<MyForm classes="my-form" />} />
       </section>
     </div>
   );

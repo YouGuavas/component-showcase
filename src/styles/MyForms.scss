@@ -1,0 +1,53 @@
+@import '../utils/_variables.scss';
+
+.my-form {
+  width: 100%;
+  .label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height:1rem;
+    letter-spacing: 0.2rem;
+    color: $my-base;
+    text-align: center;
+    width: 100%;
+    text-align: left;
+  }
+  .input {
+    appearance: auto;
+    border: none;
+    display: block;
+    background-color: $my-darkaqua;
+    color: $my-peach;
+    line-height: 1.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+    padding: 0.2rem;
+    width: 100%;
+    &::placeholder {
+      color: $my-base;
+    }
+  }
+  .form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .half-wrapper {
+      width: 50%;
+      padding: 0 0.75rem;
+      @media only screen and (max-width: $md-max) {
+        padding: 0;
+        width: 100%;
+      }
+      .input {
+        width: 100%;
+      }
+    }
+    .full-wrapper {
+      width: 100%;
+      padding: 0 0.75rem;
+    }
+  }
+}
