@@ -9,7 +9,7 @@ function App() {
   const links = ['Home', 'About', 'Contact'];
   return (
     <div className="App">
-      <Nav links={['Buttons', 'Navs']} classes="my-nav"/>
+      <Nav links={['Buttons', 'Navs', 'Forms']} classes="my-nav"/>
       <h1>Component Showcase</h1>
       <section className="section">
         <h2 id="Buttons">
@@ -24,6 +24,9 @@ function App() {
         <h2 id="Navs">Navs</h2>
         <Container classes={"container full"} component={<MyNavTop links={links} classes="my-nav"/>}/>
         <Container classes={"container full"} component={<MyNavFull links={links} classes="my-nav-full"/>}/>
+      </section>
+      <section className="section">
+        <h2 id="Forms">Forms</h2>
       </section>
     </div>
   );
