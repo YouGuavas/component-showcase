@@ -1,6 +1,7 @@
-import MyButton from './components/MyButton';
+import MyButton from './components/MyButtons';
 import Container from './components/Container';
 import {MyNavTop, MyNavFull} from './components/MyNavs';
+import MyForm from './components/MyForms';
 import Nav from './components/Nav';
 
 import './styles/App.scss';
@@ -27,6 +28,7 @@ function App() {
       </section>
       <section className="section">
         <h2 id="Forms">Forms</h2>
+        <Container classes={"container"} component={<MyForm classes="my-form" />} />
       </section>
     </div>
   );

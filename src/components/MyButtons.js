@@ -1,4 +1,4 @@
-import '../styles/MyButton.scss';
+import '../styles/MyButtons.scss';
 
 export default function MyButton(props) {
   return (
