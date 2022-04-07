@@ -32,7 +32,7 @@ export function MyNavTop(props) {
           })}
         </ul>
         <div className="mobile-grid">
-          <button onClick={toggleMenu} id="mobile-menu-button" className="mobile-menu-button">
+          <button aria-label="Mobile Menu Button" onClick={toggleMenu} id="mobile-menu-button" className="mobile-menu-button">
             <div className="bar1"></div>
             <div className="bar2"></div>
             <div className="bar3"></div>
@@ -72,7 +72,7 @@ export function MyNavFull(props) {
   }
   return (
     <div className="full-page">
-      <button onClick={toggleMenu} id="menu-button-full" className="menu-button">
+      <button aria-label="Full Menu Button" onClick={toggleMenu} id="menu-button-full" className="menu-button">
             <div className="bar1"></div>
             <div className="bar2"></div>
             <div className="bar3"></div>

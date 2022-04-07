@@ -31,7 +31,7 @@ export default function Nav(props) {
           })}
         </ul>
         <div className="mobile-grid">
-          <button onClick={toggleMenu} id="mobile-menu-button-main" className="mobile-menu-button">
+          <button name="Main Nav Mobile Button" onClick={toggleMenu} id="mobile-menu-button-main" className="mobile-menu-button">
             <div className="bar1"></div>
             <div className="bar2"></div>
             <div className="bar3"></div>
