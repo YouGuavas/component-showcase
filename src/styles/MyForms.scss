@@ -14,10 +14,12 @@
     width: 100%;
     text-align: left;
   }
+  
   .input {
     appearance: auto;
     border: none;
     display: block;
+    resize: none;
     background-color: $my-darkaqua;
     color: $my-peach;
     line-height: 1.25rem;
@@ -26,6 +28,7 @@
     border-radius: 0.25rem;
     padding: 0.2rem;
     width: 100%;
+    
     &::placeholder {
       color: $my-base;
     }
@@ -37,6 +40,7 @@
     .half-wrapper {
       width: 50%;
       padding: 0 0.75rem;
+      margin-top: 0.2rem;
       @media only screen and (max-width: $md-max) {
         padding: 0;
         width: 100%;
@@ -47,6 +51,7 @@
     }
     .full-wrapper {
       width: 100%;
+      margin-top: 0.2rem;
       padding: 0 0.75rem;
       @media only screen and (max-width: $md-max) {
         padding: 0;
