@@ -72,6 +72,8 @@
         color: inherit;
         text-decoration: none;
         transition: 0.4s;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
         &:hover, &.active {
           color: $my-pink;
         }
