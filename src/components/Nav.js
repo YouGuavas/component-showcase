@@ -19,7 +19,6 @@ export default function Nav(props) {
     setActive(e.target.innerHTML);
   }
   return (
-    <div className="full-page">
       <nav className={`main-nav ${props.classes}`}>
         {/*Standard menu, hides below laptop size*/}
         <ul className="standard-menu">
@@ -48,7 +47,6 @@ export default function Nav(props) {
           </ul>
         </div>
       </nav>
-    </div>
   )
 }
 

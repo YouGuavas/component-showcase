@@ -48,6 +48,9 @@
     .full-wrapper {
       width: 100%;
       padding: 0 0.75rem;
+      @media only screen and (max-width: $md-max) {
+        padding: 0;
+      }
     }
   }
 }

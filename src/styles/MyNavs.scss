@@ -129,8 +129,8 @@
   }
   /*START MAIN NAVIGATION*/
   &.main-nav {
-    position: fixed; 
-    transform: translateX(-15%); 
+    position: sticky;
+    top: 0; 
     background-color: $my-peach;
     width: 100%;
     z-index: 10000;
@@ -169,7 +169,7 @@
           display: none;
         }
         background-color: $my-peach;
-        left: 100%;
+        left: 200%;
         li>a {
           color: $my-darkaqua;
           &:hover, &.active {
