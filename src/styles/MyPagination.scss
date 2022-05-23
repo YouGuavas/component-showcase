@@ -1,0 +1,46 @@
+@import '../utils/_variables.scss';
+
+
+.my-pagination {
+  list-style: none;
+  height: 2rem;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding: 0;
+  .pill, .pill-active {
+    cursor: pointer;
+    margin: 0 0.2rem;
+    border-radius: 0.9rem;
+    height: 2rem;
+    width: 2.4rem;
+    box-sizing: border-box;
+    color: $my-darkaqua;
+    font-weight: 600;
+    transition: 0.3s;
+    text-align: center;
+    .center-align {
+      margin: 0 auto;
+      padding: 0.4rem 0.6rem;
+      text-align: center;
+      
+    }
+    @media only screen and (max-width:$md-max) {
+      font-size: 0.9rem;
+      font-weight: 600;
+      height: 1.4rem;
+      width: 1.4rem;
+      .center-align {
+        margin: 0 auto;
+        padding: 0.1rem 0.2rem;
+        text-align: center;
+      }
+      
+    }
+    
+  }
+  .pill-active, .pill:hover {
+    background-color: $my-aqua;
+    color: $my-darkorange;
+  }
+}

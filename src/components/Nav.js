@@ -11,7 +11,6 @@ export default function Nav(props) {
   const toggleMenu = () => {
     const mobileMenu = document.getElementById('mobile-menu-main');
     const mobileBtn = document.getElementById('mobile-menu-button-main');
-   // mobileMenu.classList.toggle('hidden');
     mobileMenu.classList.toggle('change');
     mobileBtn.classList.toggle('change');
   }
