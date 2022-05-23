@@ -6,7 +6,7 @@
   height: 2rem;
   display: flex;
   margin: 0 auto;
-  margin-bottom: 1rem;
+  //margin-bottom: 1rem;
   padding: 0;
   .pill, .pill-active {
     cursor: pointer;
@@ -30,6 +30,7 @@
       font-weight: 600;
       height: 1.4rem;
       width: 1.4rem;
+      margin: 0 0.1rem;
       .center-align {
         margin: 0 auto;
         padding: 0.1rem 0.2rem;
@@ -37,10 +38,20 @@
       }
       
     }
+    @media only screen and (max-width:$sm-max) {
+      font-size: 0.65rem;
+      font-weight: 600;
+      height: 1rem;
+      width: 1rem;
+      .center-align {
+        padding: 0.08rem 0;
+      }
+    }
     
   }
   .pill-active, .pill:hover {
     background-color: $my-aqua;
     color: $my-darkorange;
+    padding: 0;
   }
 }
